@@ -1,15 +1,196 @@
+/* General styles for the entire document */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles for the header section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3399FF;
+    padding: 10px 20px;
+    color:white
+}
+
+/* Styles for the logo area within the header */
+.logo {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+/* Styles for the logo image */
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+    color: white;
+}
+
+/* Styles for navigation links */
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+}
+
+/* Hover effect for navigation links */
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Styles for the home, about, and contact sections */
+.home-section, .about-section, .contact-section, .lessons-section, .lesson-content-section {
+    padding: 20px;
     text-align: center;
 }
 
-h1 {
-    color: #333;
+/* Styles for the home section */
+.home-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    background: url('Pics/banner.png') no-repeat center center;
+    background-size: cover;
 }
 
-p {
-    color: #666;
+.home-content {
+    display: flex;
+    /*background-color: rgba(255, 255, 255, 0.8);*/
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 900px;
+    width: 100%;
+}
+
+.home-text {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+.home-text h1 {
+    font-size: 3em;
+    color: white;
+}
+
+.home-text h3 {
+    font-size: 2em;
+    margin: 10px 0;
+    color: white;
+}
+
+.buttons {
+    margin: 20px 0;
+    
+}
+
+.buttons button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: #F4AE68 ;
+    border: none;
+    transition: background-color 0.3s ease;
+    
+}
+
+.buttons button:hover {
+    background-color: #0056b3;
+}
+
+.home-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    /*background-color: #f0f0f0;*/
+}
+
+.home-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Styles for the team section */
+.team {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.member {
+    margin: 0 10px;
+    text-align: center;
+}
+
+.member img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+/* Styles for the lessons section */
+.lessons-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lessons-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.lesson {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 150px;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.lesson img {
+    width: 100%;
+    height: auto;
+}
+
+.lesson h3 {
+    margin: 10px 0 0 0;
+}
+
+/* Hover effect for the lesson items */
+.lesson:hover {
+    border-color: #007BFF;
+}
+
+/* Styles for the lesson content section */
+.lesson-content-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lesson-overview {
+    text-align: left;
+}
+
+.lesson-video iframe {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.lesson-explanation {
+    text-align: left;
+    max-width: 800px;
 }

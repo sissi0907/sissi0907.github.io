@@ -1,12 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My First Website</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WL GWC</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to My Website</h1>
-    <p>This is my first web page.</p>
+    <header>
+        <div class="logo">
+            <img src="Pics/logo.png" alt="Logo">
+            <span>WL GWC</span>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="lessons.html">Lessons</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home-section">
+        <div class="home-content">
+            <div class="home-text">
+                <h1>Code, Play, Learn!</h1>
+                <h3>Do it for Kids in STEM!</h3>
+                <div class="buttons">
+                    <button>LESSONS</button>
+                    <button>JOIN SCRATCH</button>
+                </div>
+            </div>
+            <div class="home-image">
+                <img src="Pics/scratch1.png">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2>Who Are We?</h2>
+        <p>We are part of the Washington-Liberty High School Girls Who Code club where we promote inclusivity in the tech industry! We mentor elementary students in Arlington, VA about various Scratch coding games & lessons.</p>
+        <div class="team">
+            <div class="member">
+                <img src="path/to/photo1.png" alt="Hanan Abdelbagi">
+                <p>Hanan Abdelbagi</p>
+            </div>
+            <div class="member">
+                <img src="path/to/photo2.png" alt="Zarina Abdukarimova">
+                <p>Zarina Abdukarimova</p>
+            </div>
+            <div class="member">
+                <img src="path/to/photo3.png" alt="Sissi Wang">
+                <p>Sissi Wang</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact</h2>
+        <p>Have any questions or concerns?</p>
+        <p>Email us at: <a href="mailto:wlgwc@gmail.com">wlgwc@gmail.com</a></p>
+    </section>
+
     <script src="scripts.js"></script>
 </body>
 </html>
