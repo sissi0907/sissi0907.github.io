@@ -1,3 +1,7 @@
+@import 'css/bootstrap.min.css';
+@import 'css/font-awesome.min.css';
+@import 'css/style.css';
+@import 'css/responsive.css';
 /* General styles for the entire document */
 body {
     font-family: Arial, sans-serif;
@@ -48,6 +52,14 @@ nav a:hover {
     text-align: center;
 }
 
+.about-section{
+    background-color: #3399FF;
+    color:white;
+    /*display:flex;*/
+    
+}
+
+
 /* Styles for the home section */
 .home-section {
     display: flex;
@@ -95,7 +107,7 @@ nav a:hover {
     font-size: 1em;
     cursor: pointer;
     background-color: #007BFF;
-    color: #F4AE68 ;
+    color: white ;
     border: none;
     transition: background-color 0.3s ease;
     
@@ -122,17 +134,34 @@ nav a:hover {
 .team {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 50px;
+    
+    
 }
+
+.member-text h2 {
+    font-size: 3em;
+    color: white;
+
+}
+
+.member-text p {
+    font-size: 1.5em;
+    color: white;
+    
+}
+
 
 .member {
     margin: 0 10px;
     text-align: center;
+    
+    
 }
 
 .member img {
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
     border-radius: 50%;
 }
 
@@ -141,6 +170,8 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    /*background-color: #007BFF;*/
+    
 }
 
 .lessons-grid {
